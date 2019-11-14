@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hexo搭建博客 | Superwu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="wuzheng">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <script id="hexo-configurations">
+  var CONFIG = {
+    root: '/',
+    theme: 'lx',
+    version: '0.0.0',
+    localsearch:{
+      "enable": false,
+      "trigger": "auto",
+      "top_n_per_article": 1,
+      "unescape": false,
+      "preload": false
+      },
+    path: '-'
+  };
+</script>
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/jquery.jside.menu.js"></script>
+	<script>
+	$(document).ready(function(){
+	$(".menu-container").jSideMenu({
+	    jSidePosition: "position-right",
+	    jSideSticky: true,
+	    jSideSkin: "endless-river",
+	     });
+	}); 
+	</script>
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300|Noto+Serif+SC&amp;display=swap">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+</head>
+<body>
+<div class="single">
+<div id="page">
+<div id="lx-aside" style="background-image: url(/images/page-cover.jpg)" data-stellar-background-ratio="0.5">
+  <div class="overlay">
+  <div class="page-title">
+    <div class="avatar"><a href="/"><img src="/images/2.png"></a></div>
+    <span>2019-11-14</span>
+    <h2>Hexo搭建博客</h2>
+    
+    </div>
+</div>
+</div>
+
+<div id="lx-main-content">
+  <div class="lx-post">
+    <div class="lx-entry padding">
+      <div>
+        <h3 id="借鉴的别人-不是原创"><a href="#借鉴的别人-不是原创" class="headerlink" title="借鉴的别人  不是原创"></a>借鉴的别人  不是原创</h3><blockquote>
+<p>第一步：你要先创建一个github</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20191114190243886.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTEzNTY5MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>第二步：创建一个项目</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20191114190350291.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTEzNTY5MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>第三步：新建一个名为你的用户名.github.io的仓库，例如，你的github用户名为user，就新建一个名为user.github.io的仓库（强制要求哦），将来你的网站访问地址就为：<a href="http://user.github.io" target="_blank" rel="noopener">http://user.github.io</a> 并且一个github账户最多只能创建一个这样可以直接使用域名访问的仓库。</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20191114191625935.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTEzNTY5MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>第四步：在github上打开你的工程，点击 Settings </p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20191114191745892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTEzNTY5MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>第五步：填写域名  save就行</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20191114191843836.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTEzNTY5MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>第六步：桌面点击Git Bash Here   (还要安装一下git  后期要上传到仓库)</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20191114194413946.png" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>第七步安装(无脑回车)</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"shaoshanhuan@163.com"</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>第八步：在你的C盘 -&gt; 找到User(用户) -&gt; 打开.ssh -&gt; 复制里面的密钥</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20191114192508964.png" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>第九步：将密钥复制到github</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20191114193235471.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTEzNTY5MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>第十步：创建密钥</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20191114193329901.png" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>第十一步：将密钥粘贴</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/2019111419343634.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTEzNTY5MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>第十二布测试是否成功</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ssh -T git@github.com </span><br><span class="line">Are you sure you want to continue connecting (yes/no)?，输入yes，然后会看到：</span><br><span class="line">Hi ***! Yo<span class="string">u've successfully authenticated, but GitHub does not provide shell access.</span></span><br><span class="line"><span class="string">看到这个显示SSH配置成功了</span></span><br></pre></td></tr></table></figure>
+
+
+<blockquote>
+<p>第十三步</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --<span class="keyword">global</span> user.name <span class="string">"***"</span>// 你的github用户名，非昵称</span><br><span class="line">$ git config --<span class="keyword">global</span> user.email  <span class="string">"xxx@qq.com"</span>// 填写你的github注册邮箱</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>第十四步安装Hexo：</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>第十五步创建Hexo项目</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ cd d:/hexo  // 这个命令表示终端切换到d盘hexo目录下</span><br><span class="line">$ hexo init blog  // 初始化项目 项目名称为blog 这个过程可能会花费一些时间</span><br><span class="line">$ cd blog   // 切换到blog目录下</span><br><span class="line">$ npm install   // 这一步是安装所需的依赖</span><br><span class="line">$ hexo g <span class="comment"># 或者hexo generate  //生成静态文件</span></span><br><span class="line">$ hexo s <span class="comment"># 或者hexo server    //然后就可以在浏览器输入http://localhost:4000/ 就可以在本地查看初始化的项目了</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>在网页输入<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20191114194546484.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTEzNTY5MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>挺丑的是吧   哈哈   可以换主题的</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://hexo.io/themes/</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>打开终端在d:/hexo/bolg/themes目录下，输入如下命令下载主题</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/Haojen/hexo-theme-Anisina.git</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>更改主题</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20191114195200434.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTEzNTY5MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h1 id="里面的细节在下载主题里都有详细接收"><a href="#里面的细节在下载主题里都有详细接收" class="headerlink" title="里面的细节在下载主题里都有详细接收"></a>里面的细节在下载主题里都有详细接收</h1><blockquote>
+<p>部署至仓库</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g <span class="comment"># 或者hexo generate  //生成静态文件 每次更新了文章都要执行这步重新生成一下静态文件</span></span><br><span class="line">$ hexo s <span class="comment"># 或者hexo server    //然后就可以在浏览器输入http://localhost:4000/ 就可以在本地查看初始化的项目了</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>在部署之前我们需要安装hexo-deployer-git</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>执行部署命令</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g <span class="comment"># 或者hexo generate  //生成静态文件 每次更新了文章都要执行这步重新生成一下静态文件 无论是本地查看还是部署到github上</span></span><br><span class="line">$ hexo d //部署上线</span><br></pre></td></tr></table></figure>
+
+<h1 id="之后就可以根据你的用户名-github-io访问自己的博客了"><a href="#之后就可以根据你的用户名-github-io访问自己的博客了" class="headerlink" title="之后就可以根据你的用户名.github.io访问自己的博客了"></a>之后就可以根据你的用户名.github.io访问自己的博客了</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="lx-navigation">
+	<div class="lx-cover prev lx-cover-sm" style="background-image: url(/images/footer_1.jpg)">
+		<div class="overlay"></div>
+		<a class="copy" href="/2019/11/14/11/">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Next</span>
+						<h3>11</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+        <div class="lx-cover next lx-cover-sm" style="background-image: url(/images/footer_2.jpg)">
+		<div class="overlay"></div>
+		<a class="copy" href="/2019/11/14/%E6%97%A0%E9%9C%80%E6%8F%92%E4%BB%B6%E6%89%8B%E5%86%99%E5%88%86%E9%A1%B5/">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Prev</span>
+						<h3>无需插件手写分页</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+
+</div>
+
+<footer>
+  <div>
+  Copyright &copy; 2019.<a href="/">Superwu</a><br>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme <a href="https://lx.blleng.cn" target="_blank">Lx</a><br>
+  </div>
+</footer>
+</div>
+
+<button class="menu-trigger"></button>
+<div class="menu">
+  <div class="menu-head">
+    <span class="layer">
+      <div class="col">
+        <div class="row for-pic">
+          <div class="profile-pic">
+            <a href="/"><img src="/images/2.png" alt="wuzheng"/></a>
+          </div>
+        </div>
+        <div class="row for-name">
+          <p>wuzheng</p>
+          <span class="tagline">激情</span>
+        </div>
+      </div>
+    </span>
+  </div>
+  <nav class="menu-container">
+  <ul class="menu-items">
+    <li><a href="/"><i class="fa fa-home fa-fw"></i>首页</a></li>
+    <li><a href="/archives/"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+    <li class="has-sub"><span class="dropdown-heading">
+      <i class="fa fa-bookmark fa-fw"></i>页面</span>
+        <ul>
+          <li><a href="/guestbook">留言</a></li>
+        <li><a href="/about">关于</a></li>
+        </ul>
+    </li>
+    <li class="has-sub"><span class="dropdown-heading">
+      <i class="fa fa-link fa-fw"></i>友链</span>
+        <ul>
+          <li> <a href="https://lx.blleng.cn" target="_blank">Theme-Lx</a></li>
+        </ul>
+    </li>
+  </ul>
+  </nav>
+</div>
+
+<div class="gototop js-top">
+  <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+</div>
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/jquery.waypoints.min.js"></script>
+<script src="/js/jquery.stellar.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+</body>
+</html>
