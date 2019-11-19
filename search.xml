@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>通关二</title>
+    <url>/2019/11/19/%E9%80%9A%E5%85%B3%E4%BA%8C/</url>
+    <content><![CDATA[<h2 id="列表、集合、字典推导式的区别在哪里？"><a href="#列表、集合、字典推导式的区别在哪里？" class="headerlink" title="列表、集合、字典推导式的区别在哪里？"></a>列表、集合、字典推导式的区别在哪里？</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">列表推导式：输出为一个列表</span><br><span class="line">集合推导式：和列表推导式类似，只是将方括号变成了尖括号，返回的是一个生成器对象</span><br><span class="line">字典推导式：快速查询key</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="推导式相较于普通循环谁更快一些"><a href="#推导式相较于普通循环谁更快一些" class="headerlink" title="推导式相较于普通循环谁更快一些"></a>推导式相较于普通循环谁更快一些</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">因为推导式被编译后字节码执行速度更快，虽然Python不是编译型语言，但还是要被编译成二进制的字节码才能被执行</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="元组推导式是什么"><a href="#元组推导式是什么" class="headerlink" title="元组推导式是什么"></a>元组推导式是什么</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">和列表推导式类似，只是将方括号改成了尖括号，返回的是一个生成器对象</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="元组推导式怎么一行生成九九乘法表"><a href="#元组推导式怎么一行生成九九乘法表" class="headerlink" title="元组推导式怎么一行生成九九乘法表"></a>元组推导式怎么一行生成九九乘法表</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">print(&apos;\n&apos;.join((&apos; &apos;.join((&apos;%d*%d=%d&apos;%(j,i,j*i)for j in range(1,i+1))) for i in range(1,10))))</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="列表内置函数"><a href="#列表内置函数" class="headerlink" title="列表内置函数"></a>列表内置函数</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">count 查看元素个数</span><br><span class="line">append 末尾添加</span><br><span class="line">extend 逐一添加</span><br><span class="line">insert 指定添加</span><br><span class="line">del 根据下标删除</span><br><span class="line">remove 根据元素进行删除</span><br><span class="line">pop 删除最后一位元素</span><br><span class="line">sort 正序 -reverse 倒序</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="字符串内置函数"><a href="#字符串内置函数" class="headerlink" title="字符串内置函数"></a>字符串内置函数</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">find() 根据指定字符/字符串查找，找到返回下标 否之 返回-1</span><br><span class="line">index() 根据指定字符/字符串查找，找到返回下标 否之 报错</span><br><span class="line">count() 根据指定字符/字符串查找个数</span><br><span class="line">replace() 替换指定字符/字符串</span><br><span class="line">split()  根据指定操作进行切片 切片后为列表</span><br><span class="line">startswith()  查询是否以指定字符/字符串开头  是返回True 否返回False</span><br><span class="line">endswith()  查询是否以指定字符/字符串结尾   是返回True 否返回False</span><br><span class="line">upper()   将小写字符转为大写</span><br><span class="line">lower()   将大写字符转为小写</span><br><span class="line">little()   将每个单词首字母大写</span><br><span class="line">capitalize()   将字符串首字母大写</span><br><span class="line">partition()  在左侧将指定字符/字符串分割成 字符/字符串前   字符/字符串  字符/字符串后</span><br><span class="line">rpartition()  在右侧将指定字符/字符串分割成 字符/字符串前   字符/字符串  字符/字符串后</span><br><span class="line">isdigit()   查看字符串是否只包含数字   是返回True 否返回False</span><br><span class="line">isalnum()   查看字符串是否只包含字母   是返回True 否返回False</span><br><span class="line">isspace()   查看字符串是否包含空格   是返回True 否返回False</span><br><span class="line">lstrip（）  去除字符串左空格</span><br><span class="line">rstrip()   去除字符串右空格</span><br><span class="line">strip()    去除字符串空格</span><br><span class="line">rfind()   从右向左查询</span><br><span class="line">join()   将元素逐一添加至字符串</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="集合、字典内置函数"><a href="#集合、字典内置函数" class="headerlink" title="集合、字典内置函数"></a>集合、字典内置函数</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">集合无序：add 添加</span><br><span class="line">            update() 拆分逐一添加</span><br><span class="line">            remove() 删除元素  存在删除  不存在报错</span><br><span class="line">            pop() 随机删除元素</span><br><span class="line">            discard()  删除元素  存在删除  不存在不会报错</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="元组就两个"><a href="#元组就两个" class="headerlink" title="元组就两个"></a>元组就两个</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">count 根据指定查询个数</span><br><span class="line">index  根据指定查询  存在返回下标 不存在报错   可以有查询范围   </span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 数据类型中都有的一个函数是什么？</span><br></pre></td></tr></table></figure>
+<p>count()</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">## list.append和list.extend的区别</span><br></pre></td></tr></table></figure>
+<p>list.append 末尾添加<br>list.extend 逐一添加</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">## 什么是map函数？有啥用？</span><br></pre></td></tr></table></figure>
+<p>接收两个参数  一个函数一个可迭代对象<br>返回一个生成器<br>作用：将可迭代对象以函数一次操作可迭代对象中的每一个元素</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">## 请使用reduce函数计算100的阶乘</span><br></pre></td></tr></table></figure>
+<p>from fuctools import reduce</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">## zip函数又是啥</span><br></pre></td></tr></table></figure>
+<p>将可迭代对象作为参数<br>返回的是一个对象<br>如果想展示内容需要转换   转换的zip()打包成元组</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">## 请使用fillter函数将[1,2,3,4]处理为[2,4]</span><br></pre></td></tr></table></figure>
+<p>b = filter(lambda x:x%2==0 ,[1,2,3,4])<br>print(b)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">## 使用sorted函数，将一个字典用value排序</span><br></pre></td></tr></table></figure>
+<p>from operator import itemgetter<br>print(sorted({‘a’:1,’b’:3,’c’:2}.items(),key=itemgetter(1)))</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">## dir函数和help函数</span><br></pre></td></tr></table></figure>
+
+<pre><code></code></pre>]]></content>
+  </entry>
+  <entry>
     <title>通关一</title>
     <url>/2019/11/18/%E9%80%9A%E5%85%B3%E4%B8%80/</url>
     <content><![CDATA[<h2 id="Python-2-3中的整型异同"><a href="#Python-2-3中的整型异同" class="headerlink" title="Python 2/3中的整型异同"></a>Python 2/3中的整型异同</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">①</span><br><span class="line">Python2 整数相除取整/参与运算的最复杂类型靠拢</span><br><span class="line">例：3/2 结果为1</span><br><span class="line">Python3 整数相除保留小数/向最复杂数据类型靠拢</span><br><span class="line">例：3/2 结果为1.5   </span><br><span class="line">②python3将python2中的long重命名为int</span><br><span class="line">③python3不再限制整数的值</span><br></pre></td></tr></table></figure>
@@ -11,13 +53,13 @@
 
 <h2 id="什么是真、什么是假"><a href="#什么是真、什么是假" class="headerlink" title="什么是真、什么是假"></a>什么是真、什么是假</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">非空非零为真</span><br><span class="line">零或空为假</span><br></pre></td></tr></table></figure>
 
-<h2 id="字典的底层是什么"><a href="#字典的底层是什么" class="headerlink" title="字典的底层是什么"></a>字典的底层是什么</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">字典是Python中唯一的映射类型，也叫哈希表</span><br></pre></td></tr></table></figure>
+<h2 id="字典的底层是什么"><a href="#字典的底层是什么" class="headerlink" title="字典的底层是什么"></a>字典的底层是什么</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">底层是通过哈希表实现的</span><br><span class="line">哈希表比较快</span><br><span class="line">生成索引，索引唯一所以快</span><br></pre></td></tr></table></figure>
 
 <h2 id="单引号、双引号、三引号的区别"><a href="#单引号、双引号、三引号的区别" class="headerlink" title="单引号、双引号、三引号的区别"></a>单引号、双引号、三引号的区别</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">very easy 懒得解释了</span><br></pre></td></tr></table></figure>
 
 <h2 id="三引号常用来干什么"><a href="#三引号常用来干什么" class="headerlink" title="三引号常用来干什么"></a>三引号常用来干什么</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">跨行输出</span><br><span class="line">多行注释</span><br><span class="line">帮助文档</span><br></pre></td></tr></table></figure>
 
-<h2 id="什么是原码、反码、补码"><a href="#什么是原码、反码、补码" class="headerlink" title="什么是原码、反码、补码"></a>什么是原码、反码、补码</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">原码：正常的二进制码、最高位为1就为负数  最高位为0为正数</span><br><span class="line">反码：整数不变，负数最高位不变其余取反</span><br><span class="line">补码：整数不变，负数在其位数后+1</span><br><span class="line"></span><br><span class="line">原码人类可读  补码计算机可读</span><br></pre></td></tr></table></figure>
+<h2 id="什么是原码、反码、补码"><a href="#什么是原码、反码、补码" class="headerlink" title="什么是原码、反码、补码"></a>什么是原码、反码、补码</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">原码：正常的二进制码、最高位为0正为1负</span><br><span class="line">反码：正数不变，负数最高位不变其余取反</span><br><span class="line">补码：正数不变，负数在其位数后+1</span><br><span class="line"></span><br><span class="line">原码人类可读  补码计算机可读</span><br></pre></td></tr></table></figure>
 
 
 <h2 id="位运算的两数交换有什么好处"><a href="#位运算的两数交换有什么好处" class="headerlink" title="位运算的两数交换有什么好处"></a>位运算的两数交换有什么好处</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例</span><br><span class="line">a=1</span><br><span class="line">b=2</span><br><span class="line">a=a^b</span><br><span class="line">b=a^b</span><br><span class="line">好处：节约内存，省去了变量</span><br></pre></td></tr></table></figure>
@@ -29,7 +71,7 @@
 <h2 id="Python支持自增自减操作？"><a href="#Python支持自增自减操作？" class="headerlink" title="Python支持自增自减操作？"></a>Python支持自增自减操作？</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">不支持</span><br></pre></td></tr></table></figure>
 
 
-<h2 id="Python2-3中的xrange与range区别"><a href="#Python2-3中的xrange与range区别" class="headerlink" title="Python2/3中的xrange与range区别"></a>Python2/3中的xrange与range区别</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python2 中有xrange和range</span><br><span class="line">python3 中只有一个range   节约内存</span><br></pre></td></tr></table></figure>
+<h2 id="Python2-3中的xrange与range区别"><a href="#Python2-3中的xrange与range区别" class="headerlink" title="Python2/3中的xrange与range区别"></a>Python2/3中的xrange与range区别</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python2 中有xrange和range</span><br><span class="line">python3 中只有一个range   抽象表示，节约内存</span><br></pre></td></tr></table></figure>
 
 
 <h2 id="PEP8规范"><a href="#PEP8规范" class="headerlink" title="PEP8规范"></a>PEP8规范</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">只要缩进对其就行</span><br></pre></td></tr></table></figure>

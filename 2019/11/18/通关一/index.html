@@ -69,13 +69,13 @@
 
 <h2 id="什么是真、什么是假"><a href="#什么是真、什么是假" class="headerlink" title="什么是真、什么是假"></a>什么是真、什么是假</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">非空非零为真</span><br><span class="line">零或空为假</span><br></pre></td></tr></table></figure>
 
-<h2 id="字典的底层是什么"><a href="#字典的底层是什么" class="headerlink" title="字典的底层是什么"></a>字典的底层是什么</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">字典是Python中唯一的映射类型，也叫哈希表</span><br></pre></td></tr></table></figure>
+<h2 id="字典的底层是什么"><a href="#字典的底层是什么" class="headerlink" title="字典的底层是什么"></a>字典的底层是什么</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">底层是通过哈希表实现的</span><br><span class="line">哈希表比较快</span><br><span class="line">生成索引，索引唯一所以快</span><br></pre></td></tr></table></figure>
 
 <h2 id="单引号、双引号、三引号的区别"><a href="#单引号、双引号、三引号的区别" class="headerlink" title="单引号、双引号、三引号的区别"></a>单引号、双引号、三引号的区别</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">very easy 懒得解释了</span><br></pre></td></tr></table></figure>
 
 <h2 id="三引号常用来干什么"><a href="#三引号常用来干什么" class="headerlink" title="三引号常用来干什么"></a>三引号常用来干什么</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">跨行输出</span><br><span class="line">多行注释</span><br><span class="line">帮助文档</span><br></pre></td></tr></table></figure>
 
-<h2 id="什么是原码、反码、补码"><a href="#什么是原码、反码、补码" class="headerlink" title="什么是原码、反码、补码"></a>什么是原码、反码、补码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">原码：正常的二进制码、最高位为1就为负数  最高位为0为正数</span><br><span class="line">反码：整数不变，负数最高位不变其余取反</span><br><span class="line">补码：整数不变，负数在其位数后+1</span><br><span class="line"></span><br><span class="line">原码人类可读  补码计算机可读</span><br></pre></td></tr></table></figure>
+<h2 id="什么是原码、反码、补码"><a href="#什么是原码、反码、补码" class="headerlink" title="什么是原码、反码、补码"></a>什么是原码、反码、补码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">原码：正常的二进制码、最高位为0正为1负</span><br><span class="line">反码：正数不变，负数最高位不变其余取反</span><br><span class="line">补码：正数不变，负数在其位数后+1</span><br><span class="line"></span><br><span class="line">原码人类可读  补码计算机可读</span><br></pre></td></tr></table></figure>
 
 
 <h2 id="位运算的两数交换有什么好处"><a href="#位运算的两数交换有什么好处" class="headerlink" title="位运算的两数交换有什么好处"></a>位运算的两数交换有什么好处</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">例</span><br><span class="line">a=1</span><br><span class="line">b=2</span><br><span class="line">a=a^b</span><br><span class="line">b=a^b</span><br><span class="line">好处：节约内存，省去了变量</span><br></pre></td></tr></table></figure>
@@ -87,7 +87,7 @@
 <h2 id="Python支持自增自减操作？"><a href="#Python支持自增自减操作？" class="headerlink" title="Python支持自增自减操作？"></a>Python支持自增自减操作？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">不支持</span><br></pre></td></tr></table></figure>
 
 
-<h2 id="Python2-3中的xrange与range区别"><a href="#Python2-3中的xrange与range区别" class="headerlink" title="Python2/3中的xrange与range区别"></a>Python2/3中的xrange与range区别</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python2 中有xrange和range</span><br><span class="line">python3 中只有一个range   节约内存</span><br></pre></td></tr></table></figure>
+<h2 id="Python2-3中的xrange与range区别"><a href="#Python2-3中的xrange与range区别" class="headerlink" title="Python2/3中的xrange与range区别"></a>Python2/3中的xrange与range区别</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python2 中有xrange和range</span><br><span class="line">python3 中只有一个range   抽象表示，节约内存</span><br></pre></td></tr></table></figure>
 
 
 <h2 id="PEP8规范"><a href="#PEP8规范" class="headerlink" title="PEP8规范"></a>PEP8规范</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">只要缩进对其就行</span><br></pre></td></tr></table></figure>
@@ -129,12 +129,12 @@
 <div class="lx-navigation">
 	<div class="lx-cover prev lx-cover-sm" style="background-image: url(/images/猫.jpg)">
 		<div class="overlay"></div>
-		<a class="copy" href="#">
+		<a class="copy" href="/2019/11/19/%E9%80%9A%E5%85%B3%E4%BA%8C/">
 			<div class="display-t">
 				<div class="display-tc">
 					<div>
 						<span>Next</span>
-						<h3>没有更新的文章</h3>
+						<h3>通关二</h3>
 					</div>
 				</div>
 			</div>
